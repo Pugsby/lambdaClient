@@ -153,7 +153,9 @@ window.addEventListener('webpageLoaded', () => {
                 el.style.setProperty("color", "white", "important");
         });
         document.querySelector(".home-logo").src = "https://i.ibb.co/0yDD453F/image.png"
+        navbarBg.style.opacity = 1
 });
 window.addEventListener("gameplayStarted", () => {
         lambda_tianluGif.style.top = "3000vh"
+        navbarBg.style.opacity = 0
 });
