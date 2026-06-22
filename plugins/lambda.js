@@ -1,6 +1,6 @@
 
 var lambda_clientVersionElement = document.createElement("p")
-lambda_clientVersionElement.innerText = "Lambda Client 1.0.1"
+lambda_clientVersionElement.innerText = "Lambda Client 1.0.2"
 lambda_clientVersionElement.className = "lambdaClientVersion"
 
 var lambda_tianluGif = document.createElement("img")
