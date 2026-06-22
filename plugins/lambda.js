@@ -1,6 +1,6 @@
 
 var lambda_clientVersionElement = document.createElement("p")
-lambda_clientVersionElement.innerText = "Lambda Client 1.0.0"
+lambda_clientVersionElement.innerText = "Lambda Client 1.0.1"
 lambda_clientVersionElement.className = "lambdaClientVersion"
 
 var lambda_tianluGif = document.createElement("img")
@@ -66,7 +66,8 @@ character-preview {
         left: 0;
         top: 0;
         width: 100vw;
-        height: 64px
+        height: 64px;
+        pointer-events: none;
 }
 menu-item:nth-of-type(3),
 menu-item:nth-of-type(4) {
