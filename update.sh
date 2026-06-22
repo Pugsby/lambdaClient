@@ -14,6 +14,7 @@ fi
 rm -rf ./lambdaClient
 find . -mindepth 1 ! -name "update.sh" -exec rm -rf {} +
 git clone https://github.com/pugsby/lambdaClient.git
+chmod -R 777 ./lambdaClient
 rm ./lambdaClient/update.sh
 mv ./lambdaClient/{*,.*} .
 rmdir ./lambdaClient
