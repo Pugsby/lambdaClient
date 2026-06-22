@@ -1,0 +1,32 @@
+{
+  "name": "ponytown",
+  "version": "1.0.0",
+  "description": "Pony Town with desktop support",
+  "license": "ISC",
+  "author": "Pugsby",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^42.4.1",
+    "electron-builder": "^26.15.3"
+  },
+  "allowScripts": {
+    "electron-winstaller@5.4.0": true,
+    "github:devsnek/node-register-scheme#e7cc9a63a1f512565da44cb57316d9fb10750e17": true
+  },
+  "build": {
+    "appId": "town.pony.electron",
+    "productName": "Pony Town",
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "dependencies": {
+    "discord-rpc": "^4.0.1"
+  }
+}

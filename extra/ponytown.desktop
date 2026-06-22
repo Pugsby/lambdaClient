@@ -1,0 +1,15 @@
+[Desktop Entry]
+Comment=Pony Town: Lambda Client
+Exec=/usr/local/bin/ponytown
+GenericName=ponytown
+Icon=/home/pugsby/Downloads/image (1).png
+Name=Pony Town Lambda client
+NoDisplay=false
+Path=/usr/local/bin/
+PrefersNonDefaultGPU=false
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
