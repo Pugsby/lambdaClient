@@ -2,3 +2,5 @@ node_modules/
 dist/
 .env
 .vscode/
+.flatpak-builder
+flatpak-build

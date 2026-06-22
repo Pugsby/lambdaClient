@@ -6,6 +6,7 @@ if [ ! "./package.json" ]; then
     echo "You are in the wrong directory."
     exit
 fi
+npm install electron-builder --save-dev
 if [ ! -d "./dist" ]; then
     npm run dist
 fi

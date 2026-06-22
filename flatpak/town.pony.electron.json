@@ -1,0 +1,35 @@
+{
+  "app-id": "town.pony.electron",
+  "runtime": "org.freedesktop.Platform",
+  "runtime-version": "23.08",
+  "sdk": "org.freedesktop.Sdk",
+  "extensions": [
+    "org.freedesktop.Sdk.Extension.node18"
+  ],
+  "command": "Pony-Town",
+  "finish-args": [
+    "--share=network",
+    "--socket=wayland",
+    "--socket=x11",
+    "--talk-name=org.freedesktop.Notifications",
+    "--device=all"
+  ],
+  "modules": [
+    {
+      "name": "ponytown",
+      "buildsystem": "simple",
+      "build-commands": [
+        "npm ci",
+        "npm run dist",
+        "mkdir -p /app/bin /app/lib/ponytown /app/share/applications /app/share/icons/hicolor/256x256/apps",
+        "if [ -d dist/linux-unpacked ]; then cp -r dist/linux-unpacked/* /app/lib/ponytown/ || true; fi",
+        "if [ -x dist/linux-unpacked/Pony\\ Town ]; then cp dist/linux-unpacked/Pony\\ Town /app/bin/Pony-Town || true; fi",
+        "install -D -m644 ponytown.desktop /app/share/applications/pony-town.desktop || true",
+        "install -D -m644 icon.png /app/share/icons/hicolor/256x256/apps/pony-town.png || true"
+      ],
+      "sources": [
+        { "type": "dir", "path": "." }
+      ]
+    }
+  ]
+}

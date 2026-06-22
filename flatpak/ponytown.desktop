@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Pony Town Lambda Client
+Exec=Pony-Town
+Terminal=false
+Type=Application
+Icon=pony-town
+Categories=Game;Network;

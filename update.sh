@@ -18,6 +18,7 @@ chmod -R 777 ./lambdaClient
 rm ./lambdaClient/update.sh
 mv ./lambdaClient/{*,.*} .
 rmdir ./lambdaClient
+npm install electron --save-dev
 read -n 1 -p "Do you also want to immediately build and install the new version? " answer
 [[ $answer =~ ^[Yy]$ ]] && echo "Proceeding." || exit
 chmod +x ./install.sh
